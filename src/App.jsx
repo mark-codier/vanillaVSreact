@@ -1,9 +1,10 @@
-
+import Main from "./components/main/Main.jsx"
 function App() {
   
-
   return (
-    <h1>Крестики-нолики на React</h1>
+    <>
+    <Main></Main>
+    </>
   )
 }
 
