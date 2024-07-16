@@ -13,7 +13,7 @@ export default function ({name,symbol,turns}){
                 type="text" />
     }
     useEffect(()=>{
-        activePlayer = turns.length>0 && turns[turns.length-1].player
+        activePlayer = (turns.length>0 && turns[turns.length-1].player)||'X'
         localStorage[name] = playerName
     },[playerName])
     function handleClick(){

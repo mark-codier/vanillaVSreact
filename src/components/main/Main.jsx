@@ -5,13 +5,11 @@ import Log from "./Log"
 export default function Main (){
     const [gameTurns,setgameTurns] = useState([])
     function playerSelect(colIndex,rowIndex){
-        let playerSymbol;
         setgameTurns(prevTurns => {
             player = 'X'
             if(prevTurns.length>0 && prevTurns[prevTurns.length-1].player == 'X'){
                 player = 'O'
-             }  
-            playerSymbol = player
+            }  
             const newTurn = {square:{colIndex, rowIndex}, player} 
             const updTurns = prevTurns
             updTurns.push(newTurn)
